@@ -1,0 +1,182 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Work Sans', serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-left: 60%;
+    margin-top: 3%;
+    padding: 2% 3%;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+}
+
+.titulo {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+}
+
+h1 {
+    font-size: 9vw;
+    margin: 0;
+    line-height: 0.2;
+}
+
+h2 {
+    font-size: 6vw;
+    line-height: 0.2;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin-top: 3vw;
+}
+
+nav ul li {
+    margin-bottom: 1vw;
+    margin-inline-start: 25%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: pink;
+}
+
+
+
+.corazon_verde,
+.corazon_blanco,
+.corazon_naranja {
+    display: none; 
+}
+
+
+nav ul li a:hover .corazon_verde,
+nav ul li a:hover .corazon_blanco,
+nav ul li a:hover .corazon_naranja {
+    display: inline; 
+}
+
+.principal {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 60%;
+    height: auto;
+}
+
+.principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.icon {
+    display: none;
+}
+
+#imagen_fondo_responsive {
+    display: none;
+}
+
+.secundario img {
+    max-width: 100px;
+}
+
+.corazon_verde {
+    color: #169b62; 
+    margin-inline-start: 5%;
+}
+
+.corazon_blanco {
+    color: white;
+    
+}
+
+.corazon_naranja {
+    color: #ff8200; 
+    
+}
+
+@media (max-width: 480px) {
+    header {
+        margin: 0;
+        padding: 0;
+        margin-top: 75%;
+        margin-left: 30%;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+    }
+
+    .titulo {
+        display: inline-block;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 13vw;
+        margin: 0;
+        line-height: 0.2;
+    }
+
+    h2 {
+        font-size: 10vw;
+        line-height: 0.2;
+    }
+
+    .principal {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    #imagen_fondo {
+        display: none;
+    }
+
+    #imagen_fondo_responsive {
+        display: block;
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+        color: pink;
+        position: absolute;
+        top: 55%;
+        right: 20%;
+    }
+
+    .secundario img {
+        max-width: 100px;
+    }
+}

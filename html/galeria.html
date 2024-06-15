@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Derry Girls</title>
+</head>
+<body>
+  <header>
+
+      <div class="titulo">
+        <h2>Derry</h2>
+        <h1>Girls</h1>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-2x"></i></a>
+
+      <nav id="menu" class="">
+        <ul>
+            <li><a href="index.html">Inicio<span class="corazon_verde">❤</span>
+              <span class="corazon_blanco">❤</span>
+              <span class="corazon_naranja">❤</span></a>
+              </li>
+            <li><a href="capitulos.html">Capítulos<span class="corazon_verde">❤</span>
+              <span class="corazon_blanco">❤</span>
+              <span class="corazon_naranja">❤</span></a></li>
+            <li><a href="personajes.html">Personajes<span class="corazon_verde">❤</span>
+              <span class="corazon_blanco">❤</span>
+              <span class="corazon_naranja">❤</span></a></li>
+            <li><a href="html/galeria.html">Galería<span class="corazon_verde">❤</span>
+              <span class="corazon_blanco">❤</span>
+              <span class="corazon_naranja">❤</span></a></li>
+            <li><a href="noticias.html">Noticias<span class="corazon_verde">❤</span>
+              <span class="corazon_blanco">❤</span>
+              <span class="corazon_naranja">❤</span></a></li>
+            <li><a href="contacto.html">Contacto<span class="corazon_verde">❤</span>
+              <span class="corazon_blanco">❤</span>
+              <span class="corazon_naranja">❤</span></a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <article class = "principal">
+    <a href="index.html"><img id="imagen_fondo" src="/images/galeria/polaroid3.jpg" alt="Derry Girls"></a>
+    <a href="index.html"><img id="imagen_fondo_responsive" src="/images/galeria/polaroid_responsive.jpg" alt="Derry Girls"></a>
+  </article>
+
+  <article class = "secundario">
+    <div>
+      <a href="#">
+          
+          <h4>Trabajos en Pixar</h4>
+      </a>
+  </div>
+  <div>
+      <a href="#">
+          <img src="images/InicioDerry.jpg" alt="">
+          <h4>Turning Red</h4>
+      </a>
+  </div>
+  <div>
+      <a href="#">
+          <img src="images/InicioDerry.jpg" alt="">
+          <h4>Embrace the Panda</h4>
+      </a>
+  </div>
+
+  </article>
+  
+
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("menu");
+      if (x.className === "") {
+        x.className += " responsive";
+      } else {
+        x.className = "";
+      }
+    }
+</script>
+
+</body>
+</html>
