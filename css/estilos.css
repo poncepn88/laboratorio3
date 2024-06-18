@@ -114,11 +114,23 @@ a{
   border: 2px solid black;
   grid-column: 1; 
   grid-row: 1 / 3;
+  background-image: url(../images/Inicio/Inicio3.png);
+  background-size: contain; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center bottom; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+
 }
 
 #personajes, #galeria {
   background-color: #A6CA20;
   border: 2px solid black; 
+}
+
+#galeria{
+  background-image: url(../images/Inicio/tv3.png);
+  background-size: 92% auto; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .principal div {
