@@ -186,7 +186,7 @@ footer {
 
 #social_media a {
   color: black;
-  font-size: 30px;
+  font-size: 3vw;
   background-color:#FF2273;
   border-radius: 50%;
   border: 3px solid black;
@@ -208,6 +208,8 @@ footer {
 footer p {
   font-family: 'Work Sans', sans-serif;
   color: black;
+  font-size: 1.2vw;
+
 }
 
 @keyframes slide {
