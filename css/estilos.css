@@ -61,7 +61,7 @@ nav {
   grid-column: 2 / 3; 
   grid-row: 2 / 3; 
   display: flex; 
-  padding: 5%;
+  padding: 10%;
   align-items: start;
   justify-content: center;
   font-family: Arial, sans-serif;
@@ -77,7 +77,7 @@ nav ul{
 }
 
 nav ul li {
-  margin-bottom: 1.9vw; 
+  margin-bottom: 3.1vw; 
 }
 
 nav ul li a{
@@ -161,10 +161,46 @@ nav ul li a{
 }
 
 #personajes{
-  background-image: url(../images/Inicio/personajes.png);
-  background-size: 85%;
-  background-position: center top; 
-  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.9fr;
+  grid-template-rows: auto 1fr;
+  gap: 5px;
+  
+}
+
+#personajes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#personajes img {
+  max-width: 100%; 
+  height: auto; 
+  transition: transform 0.3s;
+}
+
+#personajes a:nth-child(1):hover img { /* Mary */
+  transform: rotate(-5deg) scale(1.05);
+  filter:grayscale(1);
+}
+
+#personajes a:nth-child(2):hover img {
+  transform: rotate(5deg) scale(1.05); 
+  filter:grayscale(1);
+}
+
+#personajes a:nth-child(3):hover img { 
+  transform: rotate(-5deg) scale(1.05);
+  filter:grayscale(1);
+}
+
+#personajes_titulo{
+  grid-column: 1 / 4;
+  text-align: center;
+  
+
 }
 
 .principal div {
