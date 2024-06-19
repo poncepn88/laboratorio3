@@ -15,7 +15,7 @@ body{
 header {
   color: white;
   display: grid;
-  grid-template-columns: 3.5fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 2fr;
 }
 
@@ -34,12 +34,16 @@ header {
   grid-row: 1 / 2; 
   display: flex; 
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  
 }
 
 .titulo h1 {
-  font-family: 'Graduate', sans-serif;
+  font-family: 'Russo One', sans-serif;
   text-transform: uppercase;
+  font-size: 5vw;
+  text-align: center;
+  
 }
 
 nav {
@@ -48,8 +52,25 @@ nav {
   display: flex; 
   align-items: start;
   justify-content: center;
-  text-transform: uppercase;
-  font-family: 'Work Sans', sans-serif;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: right;
+  letter-spacing: 0.1vw;
+  
+  
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 1.5vw; /* Espacio entre los ítems del menú */
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 #separador {
@@ -88,14 +109,6 @@ nav {
   animation: slide 10s linear infinite; 
 }
 
-nav ul{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
 
 
 .principal{
@@ -130,6 +143,13 @@ a{
   background-image: url(../images/Inicio/tv3.png);
   background-size: 92% auto; 
   background-position: center; 
+  background-repeat: no-repeat;
+}
+
+#personajes{
+  background-image: url(../images/Inicio/personajes.png);
+  background-size: 85%;
+  background-position: center top; 
   background-repeat: no-repeat;
 }
 
