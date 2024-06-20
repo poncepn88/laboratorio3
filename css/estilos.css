@@ -40,12 +40,12 @@ a{
   
 }
 
-.titulos_rosas {
+.titulos_verdes {
   text-align: center;
   color: #000000;
   background-color: #A6CA20;
   text-shadow:1px 1px 0px #ffffff; ;
-  padding: 10px;
+  padding: 8px;
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
   font-family: 'Kosugi Maru', 'Patrick Hand', sans-serif;
   text-transform: uppercase;
@@ -99,9 +99,11 @@ header {
   line-height: 90%;
   color: #f7e30c;
   text-shadow: 5px 3px 0px rgba(0, 255, 0, 0.5);
+  transition: all 0.4s ease-in-out;
 }
 .titulo h1:hover {
   text-shadow: 5px 3px 0px rgba(0, 0, 0, 0.5);
+  
 }
 
 
@@ -314,7 +316,8 @@ nav ul li a:hover {
   gap: 20px;                       
   width: 80%;    
   height: 350px;                   
-  margin:  60px auto;                
+  margin:  60px auto;      
+            
 }
 .secundario div{
   border-radius: 10px; 
@@ -332,9 +335,63 @@ nav ul li a:hover {
 #temporada1, #temporada2, #temporada3 {
   background-color: #EF743D;
   color: white;
-  padding: 20px;
   text-align: center;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+#temporada1 img, #temporada2 img, #temporada3 img {
+  max-width: 90%;
+  height: auto;
+ 
+}
+
+/*<<<<<<- TEMPORADA 1 ->>>>>>*/
+#temporada1 h3{
+  transform: translateY(70%) rotate(-5deg) scale(1.1);
+}
+#temporada1 h3:hover {
+  transform: translateY(70%) scale(1.1);
+
+}
+
+/*<<<<<<- TEMPORADA 2 ->>>>>>*/
+#temporada2 h3{
+  transform: translateY(-70%) rotate(5deg) scale(1.1);
+}
+#temporada2 h3:hover {
+  transform: translateY(-70%) scale(1.1);
+
+  
+}
+
+/*<<<<<<- TEMPORADA 3 ->>>>>>*/
+
+#temporada3 {
+  background-image: url(../images/galeria/Personajes.png);
+  background-size: cover;
+  background-position: center;
+  overflow: visible;
+  transition: all 0.7s ease-in-out;
+}
+#temporada3:hover {
+  
+  background-size: 115%;
+  background-color: #FBEE66;
+
+ 
+}
+#temporada3 h3{
+  transform: translateY(40%) rotate(2deg) scale(1.1);
+  
+}
+#temporada3 h3:hover {
+  transform: translateY(40%) scale(1.1);
+
 }
 
 
