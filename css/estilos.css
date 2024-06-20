@@ -351,6 +351,20 @@ nav ul li a:hover {
 }
 
 /*<<<<<<- TEMPORADA 1 ->>>>>>*/
+
+#temporada1 {
+  background-image: url(../images/galeria/Temporada1.png);
+  background-size: cover;
+  background-position: center;
+  overflow: visible;
+  transition: all 0.7s ease-in-out;
+}
+#temporada1:hover {
+  background-size: 115%;
+  background-color: #FBEE66;
+
+}
+
 #temporada1 h3{
   transform: translateY(70%) rotate(-5deg) scale(1.1);
 }
@@ -360,11 +374,33 @@ nav ul li a:hover {
 }
 
 /*<<<<<<- TEMPORADA 2 ->>>>>>*/
+
+#temporada2 {
+  background-image: url(../images/galeria/Personajes.png);
+  background-size: cover;
+  background-position: center;
+  overflow: visible;
+  transition: all 0.7s ease-in-out;
+  justify-content:end;
+  
+  
+}
+
 #temporada2 h3{
-  transform: translateY(-70%) rotate(5deg) scale(1.1);
+  transform: translateY(-90%) rotate(-4deg) scale(1.1);
+  
+}
+
+
+#temporada2:hover {
+  
+  background-size: 115%;
+  background-color: #FBEE66;
+
+ 
 }
 #temporada2 h3:hover {
-  transform: translateY(-70%) scale(1.1);
+  transform: translateY(-90%) scale(1.1);
 
   
 }
@@ -372,7 +408,7 @@ nav ul li a:hover {
 /*<<<<<<- TEMPORADA 3 ->>>>>>*/
 
 #temporada3 {
-  background-image: url(../images/galeria/Personajes.png);
+  background-image: url(../images/galeria/Temporada3.png);
   background-size: cover;
   background-position: center;
   overflow: visible;
@@ -385,6 +421,7 @@ nav ul li a:hover {
 
  
 }
+
 #temporada3 h3{
   transform: translateY(40%) rotate(2deg) scale(1.1);
   
