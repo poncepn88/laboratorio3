@@ -13,16 +13,8 @@ body{
   
 }
 
-.principal div{
-  
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
-  border-radius: 10px; 
-}
 
-.secundario div{
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
-  border-radius: 10px; 
-}
+
 
 header {
   color: white;
@@ -103,10 +95,7 @@ nav ul li a{
   font-size: 1.6vw;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  
 
-  
-  
 }
 
 nav ul li a:hover {
@@ -178,6 +167,11 @@ nav ul li a:hover {
   margin-bottom: 50px;
 }
 
+.principal div{
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 10px; 
+}
+
 #inicio {
   background-color: #FBEE66;
   border: 2px solid black;
@@ -187,6 +181,9 @@ nav ul li a:hover {
   background-size: contain; 
   background-position: center bottom; 
   background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center;
+  
 }
 
 #personajes, #galeria {
@@ -265,6 +262,8 @@ nav ul li a:hover {
 
 
 
+
+
 .titulos_amarillos {
   text-align: center;
   color: black;
@@ -278,9 +277,7 @@ nav ul li a:hover {
   z-index:1;
   border-radius: 10px; 
   border: 3px solid black;
-  
-  
-  
+
 }
 
 .titulos_amarillos:hover {
@@ -288,30 +285,45 @@ nav ul li a:hover {
   
 }
 
-
-.principal div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.titulos_rosas {
+  text-align: center;
+  color: #000000;
+  background-color: #A6CA20;
+  text-shadow:1px 1px 0px #ffffff; ;
+  padding: 10px;
+  box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
+  font-family: 'Kosugi Maru', 'Patrick Hand', sans-serif;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index:1;
+  border-radius: 10px; 
+  border: 3px solid black;
+  
 }
+
+
 
 .secundario {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;  
   grid-template-rows: auto 1fr;        
-  gap: 30px;                       
+  gap: 20px;                       
   width: 80%;    
   height: 350px;                   
   margin:  60px auto;                
 }
 
+.secundario div{
+  border-radius: 10px; 
+}
+
+
 #capitulos {
-  grid-column: 1 / 4;  
-  background-color: #f7e30c;
-  color: black;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
+  grid-column: 1 / 4;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #temporada1, #temporada2, #temporada3 {
@@ -319,6 +331,7 @@ nav ul li a:hover {
   color: white;
   padding: 20px;
   text-align: center;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
 }
 
 footer {
