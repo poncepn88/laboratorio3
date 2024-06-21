@@ -222,7 +222,10 @@ nav ul li a:hover {
   background-position:bottom;
   background-repeat: no-repeat; 
   
-  
+}
+
+#inicio h2{
+  transform: rotate(-5deg);
 }
 
 #inicio:hover {
@@ -233,6 +236,7 @@ nav ul li a:hover {
   
 
 }
+
 
 #inicio a{
   display: flex;
