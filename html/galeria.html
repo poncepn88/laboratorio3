@@ -1,15 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="/css/lightbox.css" rel="stylesheet" />
     <title>Derry Girls</title>
 </head>
+
 <body>
-  <h1>Galería</h1>
+
+  <!---------------------------------------- Header  ----------------------------------------------->
+  <header class="header_alternativo">
+
+    <div class="titulo">
+        <a href="/index.html"><h1>Derry<br>Girls</h1></a>
+    </div>
+
+    <!-- Menu Hamburguesa  -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-2x"></i></a>
+
+    <!-- Barra de Nav  -->
+
+    <nav id="menu_alternativo" class="">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/html/personajes/personajes.html">Personajes</a></li>
+            <li><a class="activo" href="/html/galeria.html">Galería</a></li>
+            <li><a href="/html/capitulos/capitulos.html">Capítulos</a></li>
+            <li><a href="/html/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+  </header>
+
+  <!-- Separador 1  -->
+
+  <div id="separador_alt">
+    <p>meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+      meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+      meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+      meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+    </p>
+  </div>
+
+  <section class="galeria_section">
+
+    <!---------------------------------------- Principal  ----------------------------------------------->
+
+
+
+    <h2 class="titulos_amarillos" id="cambiar_ancho">Galería</h2>
+    
+    <div class="galeria_contenedor">
+      <a class="example-image-link" href="/images/galeria/exorcist.jpg" data-lightbox="Exorcista" data-title="Buzz Lightyear con su gato."><img class="example-image" src="/images/galeria/exorcist.jpg" alt="Buzz Lightyear con su gato"/></a>
+      <a class="example-image-link" href="/images/galeria/gitano.jpg" data-lightbox="Gitano" data-title="Buzz Lightyear señalando su imagen en un espejo."><img class="example-image" src="/images/galeria/gitano.jpg" alt="Buzz Lightyear señalando su imagen en un espejo"/></a>
+      <a class="example-image-link" href="/images/galeria/microondas.jpg" data-lightbox="Microondas" data-title="Buzz Lightyear volando"><img class="example-image" src="/images/galeria/microondas.jpg" alt="Buzz Lightyear volando"/></a>
+      <a class="example-image-link" href="/images/galeria/jesus.jpg" data-lightbox="Jesus" data-title="Buzz Lightyear volando"><img class="example-image" src="/images/galeria/jesus.jpg" alt="Buzz Lightyear volando"/></a>
+    </div>
+    <!-- Separador 2  -->
+
+    <div id="separador2">
+      <p>meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+        meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+        meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+        meet the derry girls meet the derry girls meet the derry girls meet the derry girls
+      </p>
+    </div>
+
+  </section>
+
+
+
+  <!---------------------------------------- Footer  -------------------------------------------------->
+
+  <footer>
+
+    <div id="cassete">
+      <a href="/html/contacto.html">
+        <img src="/images/Inicio/contacto.png" alt="contacto">
+      </a>
+    </div>
+
+    <div id="social_media">
+      <a href="https://www.facebook.com/derrygirlsfan/" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/derrygirlsfan/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/watch?v=MrgAqEmbbMY" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
+
+    <div id="footer_texto">
+      <p>©2024 Creado por Paola Ponce</p>
+    </div>
+
+  </footer>
+
+  <!--------- Script para menu  ---------->
+
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("menu");
+      if (x.className === "") {
+        x.className += " responsive";
+      } else {
+        x.className = "";
+      }
+    }
+  </script>
+
+  <script src="/js/lightbox-plus-jquery.min.js"></script>
+
+
 </body>
+
 </html>

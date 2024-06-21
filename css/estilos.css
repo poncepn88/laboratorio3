@@ -53,8 +53,14 @@ a{
   position: relative;
   z-index:1;
   border-radius: 10px; 
-  border: 3px solid black;
   
+  
+}
+
+.activo{
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px; 
+  padding: 8px;
 }
 
 
@@ -64,6 +70,20 @@ header {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 2fr;
+}
+
+.header_alternativo {
+    
+  
+  padding-right: 7%;
+  padding-left: 7%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #BB0577;
+  position: sticky;
+  top: 0;
+  z-index: 101;
+  
 }
 
 /*<<<<<<- Imagen ->>>>>>*/
@@ -112,7 +132,7 @@ nav {
   grid-column: 2 / 3; 
   grid-row: 2 / 3; 
   display: flex; 
-  padding: 10%;
+  padding: 8%;
   align-items: start;
   justify-content: center;
   font-family: 'Kosugi Maru', 'Patrick Hand', sans-serif;
@@ -154,6 +174,26 @@ nav ul li a:hover {
 }
 
 
+#menu_alternativo ul {
+  display: flex; 
+  list-style: none; 
+}
+#menu_alternativo ul li {
+  margin: 0 1.6%; 
+}
+#menu_alternativo ul li a {
+  color: white;
+  font-size: 1.6vw;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding: 8px 12px; 
+  
+}
+
+
+
+
+
 
 /****************** Separadores ************************/
 #separador {
@@ -161,7 +201,9 @@ nav ul li a:hover {
   width: 100%; 
   overflow: hidden; 
   margin-bottom: 40px;
+
 }
+
 #separador p {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
@@ -183,6 +225,26 @@ nav ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   color: black;
+  text-align: center;
+  white-space: nowrap; 
+  margin: 0;
+  padding: 6px 0; 
+  animation: slide 10s linear infinite; 
+}
+
+#separador_alt {
+  background-color: #EF743D; 
+  width: 100%; 
+  overflow: hidden; 
+  margin-bottom: 40px;
+  position: sticky;
+  top: 190px;
+  z-index: 102;
+}
+#separador_alt p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: white;
   text-align: center;
   white-space: nowrap; 
   margin: 0;
@@ -252,7 +314,8 @@ nav ul li a:hover {
   background-color: #FF2273;
   padding: 10px;
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
-  font-family: 'Patrick Hand', sans-serif;
+  font-family: 'Arial Condensed', sans-serif;
+  
   transition: transform 0.3s ease-in-out;
   
   border-radius: 10px; 
@@ -348,6 +411,52 @@ nav ul li a:hover {
   margin-left: 40%;
 }
 
+.galeria_contenedor {
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+  
+}
+
+.galeria_contenedor img{
+  width: 95%;
+  height: auto;
+  margin-right: 0em;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
+  border: 2px solid #000000;
+  transition: all 0.3s ease;
+}
+
+.galeria_contenedor img:hover{
+ 
+  box-shadow:
+    0 0 0 4px rgb(32, 202, 193), 
+    0 0 0 7px rgba(166, 202, 32, 1), 
+    0 0 0 10px rgba(239, 116, 61, 1); 
+
+    transform: scale(1.05);
+    
+}
+
+.galeria_section{
+  text-align: center;
+}
+
+#cambiar_ancho{
+  display: inline-block;
+  
+}
 
 
 
@@ -404,7 +513,8 @@ nav ul li a:hover {
 }
 #temporada1:hover {
   background-size: 115%;
-  background-color: #FBEE66;
+  filter: hue-rotate(60deg) saturate(180%);
+  
 
 }
 
@@ -437,7 +547,7 @@ nav ul li a:hover {
 #temporada2:hover {
   
   background-size: 115%;
-  background-color: #FBEE66;
+  filter: hue-rotate(60deg) saturate(180%);
 
  
 }
@@ -459,7 +569,7 @@ nav ul li a:hover {
 #temporada3:hover {
   
   background-size: 115%;
-  background-color: #FBEE66;
+  filter: hue-rotate(60deg) saturate(180%);
 
  
 }
@@ -553,6 +663,8 @@ footer {
   color: black;
   font-size: 1.2vw;
 }
+
+
 
 
 
