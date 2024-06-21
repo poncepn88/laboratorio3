@@ -75,8 +75,8 @@ a img {
 
 .lb-cancel {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 60px;
   margin: 0 auto;
   background: url(../images/loading.gif) no-repeat;
 }

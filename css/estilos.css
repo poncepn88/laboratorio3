@@ -412,8 +412,7 @@ nav ul li a:hover {
 }
 
 .galeria_contenedor {
-  margin-left: 0%;
-  margin-right: 0%;
+  margin-bottom: 5%;
   padding: 2%;
   text-align: center;
   width: 100%;
@@ -429,8 +428,7 @@ nav ul li a:hover {
 }
 
 .galeria_contenedor img{
-  width: 95%;
-  height: auto;
+  width: 320px;
   margin-right: 0em;
   border-radius: 10px;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
@@ -445,7 +443,7 @@ nav ul li a:hover {
     0 0 0 7px rgba(166, 202, 32, 1), 
     0 0 0 10px rgba(239, 116, 61, 1); 
 
-    transform: scale(1.05);
+    transform: scale(1.2);
     
 }
 
