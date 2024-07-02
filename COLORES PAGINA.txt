@@ -1,0 +1,30 @@
+COLORES PAGINA:
+
+DIVS INICIO
+VERDE #A6CA20
+AMARILLO pastel #FBEE66
+
+BODY
+MAGENTA #BB0577
+NARANJA #EF743D
+AMARILLO #f7e30c
+
+TEMPORADAS
+NARANJA #FF611B
+
+FOOTER 
+
+MAGENTA #FF2273;
+
+dreaming outloud sans
+morisawa
+core bandi face
+
+
+JUSTIFY CONTENT
+para alinear elementos verticalmente
+
+
+cosas pendientes:
+cambiar las descripciones de las imágenes
+en inicio>temporadas no linkea a las paginas de las temporadas, hacer el div linkeable
