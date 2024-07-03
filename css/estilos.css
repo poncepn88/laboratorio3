@@ -1060,29 +1060,9 @@ footer {
   @media (max-width: 480px) {
 
     .titulos_amarillos, .capitulo h2 {
-      text-align: center;
-      color: black;
-      background-color: #f7e30c;
-      padding: 10px;
-      box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
-      font-family: 'Graduate','Kosugi Maru', 'Patrick Hand', sans-serif;
-      text-transform: uppercase;
-      transition: transform 0.3s ease-in-out;
-      position: relative;
-      z-index:1;
-      border-radius: 10px; 
-      border: 3px solid black;
       transform: scale(0.9);
-    
     }
-    
-    .titulos_amarillos:active {
-      transform: rotate(-10deg) scale(1.05);
-      
-    }
-
-
-    .titulo h1 { /* Title font size */
+    .titulo h1 { 
         font-size: 8vw;
     }
 
@@ -1093,119 +1073,95 @@ footer {
     }
 
     #inicio {
-      background-color: #FBEE66;
-      border: 2px solid black;
+
       grid-column: 1; 
-      grid-row: 1 / 3;
-     
-      
+      grid-row: 1 / 3;      
     }
 
     #inicio h2{
-      transform: rotate(-5deg) scale(0.9);
-    }
-
-    #inicio {
-      background-color: #FBEE66;
-      border: 2px solid black;
-      grid-column: 1; 
-      grid-row: 1 / 3;
-      background-image: url(../images/Inicio/Inicio3.png);
-      background-size: 100%;
-      background-position:bottom;
-      background-repeat: no-repeat; 
-      
-    }
-    
-    #inicio h2{
-      transform: rotate(-5deg);
+      transform: scale(0.8);
     }
     
     #inicio:hover {
-      background-size: 120%;
-      background-color: #A6CA20;
-      background-image: url(../images/Inicio/estrellas.png);
-      background-position:bottom;
-      
-    
+      background-size: 110%;
     }
     
     
     #inicio a{
-      display: block;
+      display: flex;
+      justify-content: center;
     }
-    
-    
-    
+ 
     #inicio p{
-      text-align: center;
-      color: black;
-      background-color: #FF2273;
-      padding: 10px;
-      box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
-      font-family: 'Patrick Hand', sans-serif;
-      
-      transition: transform 0.3s ease-in-out;
-      
-      border-radius: 10px; 
-      border: 3px solid black;
-      margin: 20px;
-      transform: translateY(-10%) rotate(-5deg) scale(0.95);
-      
+     
+      margin-bottom: 40vw;
+      transform: translateY(-10%) scale(0.95);
+
       
     }
     
     #inicio p:hover{
-      
-      
-      transform: translateY(-10%) rotate(0deg) scale(1.1);
-      
-      
-    }
-    
-    
+      transform: rotate(0deg) scale(1.1);
 
-    #personajes { /* Characters section */
-        grid-template-columns: 1fr; /* Single column for characters */
+    }
+
+    #personajes { 
+        grid-template-columns: 1fr; 
         grid-template-rows: auto auto auto auto;
         gap: 10px;
         
     }
 
-    #personajes a:last-child { /* Title positioning */
+    #personajes a:last-child {
         grid-row: 1;
     }
 
-    #galeria img { /* Gallery image adjustment */
-        width: 100%; /* Full width */
-        transform: translateY(0); /* No initial translation */
+    #galeria img { 
+        width: 100%; 
+        transform: translateY(10); 
     }
 
-    .secundario { /* Secondary content area */
-        grid-template-columns: 1fr; /* Single column */
+    .secundario { 
+      
+        grid-template-columns: 1fr; 
         height: auto;
         width: 90%;
     }
 
-    #capitulos { /* Chapters section */
+    #capitulos { 
         grid-column: 1;
         grid-row: 1;
     }
 
-    #temporada1, #temporada2, #temporada3 {
-        margin-top: 20px; /* Added spacing between seasons */
+   
+
+    .secundario {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr 1fr 1fr;        
+      gap: 20px;                       
+      width: 80%;    
+      height: 900px;                   
+      margin:  60px auto;      
+                
+    }
+    #temporada1 h3{
+      transform: translateY(70%) rotate(0deg) scale(1.05);
+    }
+    #temporada2 h3{
+      transform: translateY(-90%) rotate(0deg) scale(1.05);
+    }
+    #temporada3 h3{
+      transform: translateY(40%) rotate(0deg) scale(1.05);
     }
 
-    .capitulo {
-        flex-direction: column; /* Stack image and content */
-        margin-left: 5vw;
-        margin-right: 5vw;
+    #temporada1:hover{
+      background-size:100%;
     }
-
-    .capitulo img {
-        width: 100%; /* Full width image */
-        margin: 10px;
-    }
+    #temporada2:hover{
+      background-size:100%;    }
+    #temporada3:hover{
+      background-size:100%;    }
 
     .formulario_contenedor { /* Form container adjustments */
         grid-template-columns: 1fr; /* Single column */
