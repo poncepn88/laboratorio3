@@ -25,7 +25,7 @@ a{
   background-color: #f7e30c;
   padding: 10px;
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
-  font-family: 'Kosugi Maru', 'Patrick Hand', sans-serif;
+  font-family: 'Graduate','Kosugi Maru', 'Patrick Hand', sans-serif;
   text-transform: uppercase;
   transition: transform 0.3s ease-in-out;
   position: relative;
@@ -47,7 +47,7 @@ a{
   text-shadow:1px 1px 0px #ffffff; ;
   padding: 8px;
   box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
-  font-family: 'Kosugi Maru', 'Patrick Hand', sans-serif;
+  font-family: 'Graduate','Kosugi Maru', 'Patrick Hand', sans-serif;
   text-transform: uppercase;
   transition: transform 0.3s ease-in-out;
   position: relative;
@@ -135,7 +135,7 @@ nav {
   padding: 8%;
   align-items: start;
   justify-content: center;
-  font-family: 'Kosugi Maru', 'Patrick Hand', sans-serif;
+  font-family: 'Graduate','Kosugi Maru', 'Patrick Hand', sans-serif;
   font-weight: bold;
   text-align: right;
   letter-spacing: 2px;
@@ -252,6 +252,59 @@ nav ul li a:hover {
   animation: slide 10s linear infinite; 
 }
 
+.ventana {
+  display: none;
+  position: fixed;
+  z-index: 103;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ventana-contenido {
+  background-color: #A6CA20;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid black;
+  width: 40%;
+ 
+  box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
+  text-align: center;
+  color: #000000;
+  box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px; 
+}
+
+.cerrar {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: #BB0577;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ventana-contenido h2 {
+  font-family: 'Graduate', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ventana-contenido p {
+  font-family: 'Patrick Hand', sans-serif;
+  text-align: justify;
+  margin-top:1.8vw;
+  font-size: 1.6vw;
+}
 
 
 /****************** Principal ************************/

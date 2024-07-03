@@ -56,23 +56,78 @@
       <div>
         <a href="personajes.html"><h2 class="titulos_amarillos">Personajes</h2></a>
       </div>
-      <!-- Temporadas  -->
-
+      <!-- Personajes  -->
       
-      
-        <a href="personajes.html"><img src="images/personajes/erin.png" alt="Erin"></a>
-        <a href="personajes.html"><img src="images/personajes/clare.png" alt="Clare"></a>
-        <a href="personajes.html"><img src="images/personajes/michelle.png" alt="Michelle"></a>
-        <a href="personajes.html"><img src="images/personajes/james.png" alt="James"></a>
-        <a href="personajes.html"><img src="images/personajes/orla.png" alt="Orla"></a>
-        <a href="personajes.html"><img src="images/personajes/hermana.png" alt="Sister Michael"></a>
-     
+            <a onclick="mostrarVentana('erin')"><img src="images/personajes/erin.png" alt="Erin"></a>
+            <a onclick="mostrarVentana('clare')"><img src="images/personajes/clare.png" alt="Clare"></a>
+            <a onclick="mostrarVentana('michelle')"><img src="images/personajes/michelle.png" alt="Michelle"></a>
+            <a onclick="mostrarVentana('james')"><img src="images/personajes/james.png" alt="James"></a>
+            <a onclick="mostrarVentana('orla')"><img src="images/personajes/orla.png" alt="Orla"></a>
+            <a onclick="mostrarVentana('hermana')"><img src="images/personajes/hermana.png" alt="Sister Michael"></a>
 
-    
+      </article>
+
+      <article>
+
+
+          <div id="erin" class="ventana">
+              <div class="ventana-contenido">
+                  <span class="cerrar" onclick="cerrarVentana('erin')">&times;</span>
+                  <h2>Erin Quinn</h2>
+                  <p>Erin es una adolescente en Derry Girls caracterizada por su egoísmo y autocomplacencia. Siempre busca su propio beneficio y no teme dejar de lado a sus amigos si es necesario. <br>Aunque sueña con ser escritora y escapar de su entorno, su visión del mundo revela una ingenuidad que sus amigos están constantemente dispuestos a desmentir.</p>
+              </div>
+
+      </div>
+
+          <div id="clare" class="ventana">
+              <div class="ventana-contenido">
+                  <span class="cerrar" onclick="cerrarVentana('clare')">&times;</span>
+                  <h2>Clare Devlin</h2>
+                  <p>Clare es presentada como una genio maquiavélico en Derry Girls, con un nombre que refleja su astucia y su lado travieso. <br>Aunque tiene buenas intenciones, no duda en poner sus intereses primero, lo que añade una complejidad moral fascinante a su personaje.</p>
+              </div>
+          </div>
+
+
+
+          <div id="michelle" class="ventana">
+              <div class="ventana-contenido">
+                  <span class="cerrar" onclick="cerrarVentana('michelle')">&times;</span>
+                  <h2>Michelle Mallon</h2>
+                  <p>Michelle es una fuerza de la naturaleza en Derry Girls, convencida de que está destinada a más allá de su pequeño pueblo natal. <br>Su valentía y desdén por la autoridad la convierten en una figura carismática y audaz dentro del grupo de amigos. Su capacidad para enfrentarse al mundo con humor y determinación añade una capa de vitalidad a la serie.</p>
+              </div>
+          </div>
+
+
+          <div id="james" class="ventana">
+              <div class="ventana-contenido">
+                  <span class="cerrar" onclick="cerrarVentana('james')">&times;</span>
+                  <h2>James Maguire</h2>
+                  <p>James, conocido como 'el jovencito inglés' en Derry Girls, enfrenta desafíos únicos debido a su origen inglés en un entorno irlandés. <br>Su historia es un recordatorio conmovedor de la lucha por la identidad y la aceptación en un contexto cultural complejo.</p>
+              </div>
+          </div>
+
+
+          <div id="orla" class="ventana">
+              <div class="ventana-contenido">
+                  <span class="cerrar" onclick="cerrarVentana('orla')">&times;</span>
+                  <h2>Orla McCool</h2>
+                  <p>Orla es un espíritu libre en Derry Girls, conocida por su falta de inhibiciones y su habilidad para no juzgarse a sí misma ni a los demás. <br>Su carácter auténtico y despreocupado aporta una frescura única al grupo de amigos.</p>
+              </div>
+          </div>
+
+
+          <div id="hermana" class="ventana">
+              <div class="ventana-contenido">
+                  <span class="cerrar" onclick="cerrarVentana('hermana')">&times;</span>
+                  <h2>Hermana Michael</h2>
+                  <p>La Hermana Michael es un personaje icónico en Derry Girls, admirada por su actitud de 'no me importa nada' y su libertad inquebrantable. <br>Como monja, su uniforme le proporciona una liberación de las normas sociales convencionales, permitiéndole expresar opiniones y actitudes que desafían las expectativas. <br>Su presencia en la serie ofrece un contrapunto refrescante y humorístico a las situaciones más serias.</p>
+              </div>
+          </div>
 
     </article>
 
-    <h1 style="color: white; margin-bottom: 10px; font-size: 40px; text-align: center; font-family: 'Graduate'; margin-bottom: 20px;">EN PROCESO</h1>
+    
+  </section>
 
     <!-- Separador 2  -->
 
@@ -122,6 +177,18 @@
       }
     }
   </script>
+<!--------- Script para Personajes  ---------->
+<script>
+  function mostrarVentana(id) {
+      document.getElementById(id).style.display = 'block';
+  }
+
+  function cerrarVentana(id) {
+      document.getElementById(id).style.display = 'none';
+  }
+
+  
+</script>
 
 
 </body>
