@@ -196,6 +196,11 @@ nav ul li a:hover {
 
 
 /****************** Separadores ************************/
+
+#separador_responsive{
+  display:none;
+}
+
 #separador {
   background-color: #EF743D; 
   width: 100%; 
@@ -232,7 +237,7 @@ nav ul li a:hover {
   animation: slide 10s linear infinite; 
 }
 
-#separador_alt {
+#separador_alt, #separador_responsive {
   background-color: #EF743D; 
   width: 100%; 
   overflow: hidden; 
@@ -241,7 +246,7 @@ nav ul li a:hover {
   top: 190px;
   z-index: 102;
 }
-#separador_alt p {
+#separador_alt p, #separador_responsive p {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   color: white;
@@ -1064,8 +1069,10 @@ footer {
     .titulo h1 {
       
       font-size: 8vw;
-      margin: 20px;
       margin-right: 40vw;
+      padding-left: 10vw;
+      padding-bottom: 4vw;
+      
       
     }
 
@@ -1074,10 +1081,15 @@ footer {
     }
 
     .header_alternativo {
-      position: relative; /* Asegurarse que el header sea el contenedor de referencia */
+      position: sticky; 
       display: flex;
-      align-items: center; /*Alineación de ítems en el header*/
-      flex-wrap: wrap;    /*Permite que el ícono se mueva a la siguiente línea si es necesario*/ 
+      align-items: center; 
+      justify-content: center;
+      flex-wrap: wrap;   
+      padding: 0;
+      padding-top: 4vw;
+      
+
     }
     
 
@@ -1088,24 +1100,55 @@ footer {
 
     #menu_alternativo.responsive {
       display: flex;
-      padding: 2%;
-  
+      padding: 0;
+      padding-bottom: 3vw;
+
     }
+
+    #menu_alternativo.responsive ul {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; /* Centrar los elementos horizontalmente */
+      
+      
+   
+    }
+
+    #menu_alternativo.responsive ul li a {
+      font-size: 3vw;
+      
+   
+    }
+
+
 
     #menu_alternativo ul li {
       margin: 10px 0; 
+      
     }
 
     .icon {
     display: block;
     margin-right: auto;
+    padding-bottom: 4vw;
     
+    }
+
+    #separador_responsive {
+
+      display: block;
+      margin-bottom: 0px;
+      top:0;
+      
+      
+      
+
     }
 
     #separador_alt {
 
-      margin-bottom: 10px;
-      top:100%;
+      display: none;
+      
 
     }
 
