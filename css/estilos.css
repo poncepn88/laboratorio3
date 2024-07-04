@@ -1298,6 +1298,11 @@ footer {
       .ventana{
         transform: scale(1.5);
       }
+
+      .ventana-contenido p{
+        font-size:3vw;
+        text-align:center;
+      }
     
     .formulario_contenedor { /* Form container adjustments */
         grid-template-columns: 1fr; /* Single column */
