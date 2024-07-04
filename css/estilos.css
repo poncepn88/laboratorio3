@@ -1066,10 +1066,19 @@ footer {
         font-size: 8vw;
     }
 
+    #separador_alt {
+
+      margin-bottom: 10px;
+      top: 0px;
+
+    }
+
     .principal { 
         grid-template-columns: 1fr; 
         height: auto; 
         width: 80%; 
+        margin-bottom: 0;
+       
     }
 
     #inicio {
@@ -1163,6 +1172,21 @@ footer {
     #temporada3:hover{
       background-size:100%;    }
 
+
+      .galeria_contenedor {
+       
+        grid-template-columns: 1fr;
+
+      }
+      
+      .galeria_contenedor img{
+        width: 350px;  
+      }
+
+      .galeria_contenedor img:hover{
+        transform: scale(1.08); 
+      }
+     
     .formulario_contenedor { /* Form container adjustments */
         grid-template-columns: 1fr; /* Single column */
         width: 90%; /* Wider width */
