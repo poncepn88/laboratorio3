@@ -1065,52 +1065,47 @@ footer {
       
       font-size: 8vw;
       margin: 20px;
+      margin-right: 200px;
       
     }
 
     .titulos_amarillos, .capitulo h2 {
       transform: scale(0.9);
     }
+
+    .header_alternativo {
+      position: relative; /* Asegurarse que el header sea el contenedor de referencia */
+      display: flex;
+      align-items: center; /*Alineación de ítems en el header*/
+      flex-wrap: wrap;    /*Permite que el ícono se mueva a la siguiente línea si es necesario*/ 
+    }
     
 
-    header {
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      background-color: #BB0577;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-  }
+
     #menu_alternativo {
-      display: none; /* Ocultar el menú por defecto */
+      display: none;
     }
 
     #menu_alternativo.responsive {
-      display: block; /* Mostrar el menú cuando tenga la clase "responsive" */
-    }
-
-    #menu_alternativo ul {
-      flex-direction: column; /* Apilar los elementos verticalmente */
+      display: flex;
+      padding: 2%;
+  
     }
 
     #menu_alternativo ul li {
-      margin: 10px 0; /* Ajusta el margen según tus preferencias */
+      margin: 10px 0; 
     }
-    
+
     .icon {
     display: block;
-    padding-right: 0.6rem;
-    margin: auto 0;
+    margin-right: auto;
+    
     }
-
-
-
 
     #separador_alt {
 
       margin-bottom: 10px;
-      top: 0px;
+      top:100%;
 
     }
 
