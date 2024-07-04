@@ -1059,12 +1059,53 @@ footer {
 
   @media (max-width: 480px) {
 
+ 
+
+    .titulo h1 {
+      
+      font-size: 8vw;
+      margin: 20px;
+      
+    }
+
     .titulos_amarillos, .capitulo h2 {
       transform: scale(0.9);
     }
-    .titulo h1 { 
-        font-size: 8vw;
+    
+
+    header {
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: #BB0577;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+  }
+    #menu_alternativo {
+      display: none; /* Ocultar el menú por defecto */
     }
+
+    #menu_alternativo.responsive {
+      display: block; /* Mostrar el menú cuando tenga la clase "responsive" */
+    }
+
+    #menu_alternativo ul {
+      flex-direction: column; /* Apilar los elementos verticalmente */
+    }
+
+    #menu_alternativo ul li {
+      margin: 10px 0; /* Ajusta el margen según tus preferencias */
+    }
+    
+    .icon {
+    display: block;
+    padding-right: 0.6rem;
+    margin: auto 0;
+    }
+
+
+
 
     #separador_alt {
 
@@ -1174,9 +1215,7 @@ footer {
 
 
       .galeria_contenedor {
-       
         grid-template-columns: 1fr;
-
       }
       
       .galeria_contenedor img{
@@ -1186,6 +1225,29 @@ footer {
       .galeria_contenedor img:hover{
         transform: scale(1.08); 
       }
+
+      .personajes_contenedor {
+        display: inline-block;      
+        margin: 0 auto;
+        justify-items: center; 
+        
+ 
+      }
+     
+      
+      .personajes_contenedor img{
+        margin-top: 10px;
+      }
+
+      .personajes_contenedor h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+
+      
      
     .formulario_contenedor { /* Form container adjustments */
         grid-template-columns: 1fr; /* Single column */
@@ -1231,11 +1293,5 @@ footer {
 
    
 }
-
-  
-
-
-
-
 
   
