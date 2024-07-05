@@ -64,6 +64,44 @@ a{
 }
 
 
+
+.dropdown-contenido{
+  display: none !important;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #f7e30c;
+  padding-top: 2vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  box-shadow: 5px 3px 0px rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease-in-out;
+  z-index:1;
+  border-radius: 10px; 
+  border: 3px solid black;  
+  
+  
+}
+
+.dropdown:hover .dropdown-contenido {
+  display: block !important;
+  
+}
+
+
+.dropdown-contenido a {
+  color: black !important;
+  text-decoration: none;
+  display: block;
+  font-size: 1em !important;
+  text-align: center 
+}
+
+
+
+
+
 /****************** Header ************************/
 header {
   color: white;
@@ -82,7 +120,7 @@ header {
   background-color: #BB0577;
   position: sticky;
   top: 0;
-  z-index: 101;
+  z-index: 200;
   
 }
 
@@ -191,10 +229,6 @@ nav ul li a:hover {
 }
 
 
-
-
-
-
 /****************** Separadores ************************/
 
 #separador_responsive{
@@ -260,7 +294,7 @@ nav ul li a:hover {
 .ventana {
   display: none;
   position: fixed;
-  z-index: 103;
+  z-index: 600;
   left: 0;
   top: 0;
   width: 100%;
@@ -871,6 +905,12 @@ nav ul li a:hover {
 
 /****************** Formulario ************************/
 
+#h2_pagina {
+  text-align: center; 
+  margin-bottom: 2.5%;
+
+}
+
 .formulario_contenedor{
   display: grid;
   grid-template-columns: 1fr 1fr;  
@@ -1078,9 +1118,14 @@ footer {
 
     .titulos_amarillos, .capitulo h2 {
       transform: scale(0.9);
+      
     }
 
-    .header_alternativo {
+    .dropdown-contenido{
+      display: none !important;
+    }
+
+    .header_alternativo, header {
       position: sticky; 
       display: flex;
       align-items: center; 
@@ -1091,21 +1136,27 @@ footer {
       
 
     }
+
+    .img_header{
+      display:none;
+    }
     
 
 
-    #menu_alternativo {
+    #menu_alternativo, #menu_bar {
       display: none;
     }
 
-    #menu_alternativo.responsive {
+    
+
+    #menu_alternativo.responsive, #menu_bar.responsive {
       display: flex;
       padding: 0;
       padding-bottom: 3vw;
 
     }
 
-    #menu_alternativo.responsive ul {
+    #menu_alternativo.responsive ul, #menu_bar.responsive ul {
       display: flex;
       flex-direction: column; 
       align-items: center; 
@@ -1114,7 +1165,7 @@ footer {
    
     }
 
-    #menu_alternativo.responsive ul li a {
+    #menu_alternativo.responsive ul li a,#menu_bar.responsive ul li a {
       font-size: 3vw;
       
    
@@ -1122,7 +1173,7 @@ footer {
 
 
 
-    #menu_alternativo ul li {
+    #menu_alternativo ul li, #menu_bar ul li {
       margin: 10px 0; 
       
     }
@@ -1150,7 +1201,7 @@ footer {
 
     }
 
-    #separador_alt {
+    #separador_alt, #separador {
 
       display: none;
       
@@ -1168,7 +1219,8 @@ footer {
     #inicio {
 
       grid-column: 1; 
-      grid-row: 1 / 3;      
+      grid-row: 1 / 3;    
+      margin-top:10%;  
     }
 
     #inicio h2{
@@ -1232,10 +1284,10 @@ footer {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr 1fr 1fr;        
-      gap: 20px;                       
+      gap: 5%;                       
       width: 80%;    
-      height: 900px;                   
-      margin:  60px auto;      
+      height: 1000px;                 
+      margin:  10% auto;      
                 
     }
     #temporada1 h3{
@@ -1256,9 +1308,13 @@ footer {
     #temporada3:hover{
       background-size:100%;    }
 
+      .galeria_section{
+        margin-top:10%;
+      }
 
       .galeria_contenedor {
         grid-template-columns: 1fr;
+    
       }
       
       .galeria_contenedor img{
@@ -1286,6 +1342,28 @@ footer {
         align-items: center;
       }
 
+      .secundario_cap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;          
+                          
+        width: 80%;    
+        height: 900px;                   
+        margin-top: 10%;  
+        margin-bottom: 10%;      
+                  
+      }
+
+      #temporada1_cap h3{
+        transform: translateY(90%) rotate(0deg) scale(1.1);
+      }
+      #temporada2_cap h3{
+        transform: translateY(-100%) rotate(0deg) scale(1.1);
+      }
+      #temporada3_cap h3{
+        transform: translateY(90%) rotate(0deg) scale(1.1);
+      }
+
       .ventana-contenido {
         
         margin: 40% auto;
@@ -1303,22 +1381,43 @@ footer {
         font-size:3vw;
         text-align:center;
       }
+
+
+
+      #h2_pagina {
+        margin-top: 10%;
+      
+      }
+
+    .formulario_contenedor { 
+        grid-template-columns: 1fr; 
+        width: 80%; 
+        max-height: 1000px;
+        margin-left: 0%;
+        margin-bottom: 10%;
+        justify-items: center;
+        margin: 0 auto;
+        margin-bottom:10%;
+    }
+
     
-    .formulario_contenedor { /* Form container adjustments */
-        grid-template-columns: 1fr; /* Single column */
-        width: 90%; /* Wider width */
+    
+    .formulario_contenedor img{
+      height: 400px;
+      margin-top:15px;
+
     }
+    
+    div.pie_contacto {
+      position:relative;
+      bottom: -30px;
+      background: #EF743D;
+      color: black;
+      width: 100%;
 
-    .formulario_contenedor img {
-        height: auto; /* Maintain aspect ratio */
     }
-
-    .form { /* Form adjustments */
-        height: auto; /* Auto height for form fields */
-    }
-
-   
-
+    
+  
     #footer_texto {
    
       font-size: 2vw;
@@ -1368,7 +1467,31 @@ footer {
       width: 100%;
       max-width: 40vw;
     }
+
+    .capitulo {
+      display: flex;
+      flex-direction: column-reverse; 
+      margin-top:20px;
+      align-items:center;
+    }
+
+    .capitulo h2{
+      transform: scale(0.8);
+    }
+
+    .capitulo:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+
+    .capitulo img {
+      transform: scale(0.9);
+      margin: 0px;
+      
+
     
+    }
+
+
   
     
     
