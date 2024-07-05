@@ -25,6 +25,25 @@ JUSTIFY CONTENT
 para alinear elementos verticalmente
 
 
+
 cosas pendientes:
-cambiar las descripciones de las imágenes
-en inicio>temporadas no linkea a las paginas de las temporadas, hacer el div linkeable
+
+LISTO - cambiar las descripciones de las imágenes
+ 
+LISTO - En Capitulos, la temporada 3 queda desfasada en el footer, version responsive
+LISTO-En inicio > temporadas, todas las temporadas llevan a Temporada 1
+
+LISTO - en inicio>temporadas no linkea a las paginas de las temporadas, hacer el div linkeable
+
+LISTO - en la version responsive, el menu de temporadas queda por atrás del separador
+
+
+
+
+
+
+5182
+
+
+
+Historically it is not possible to pull a report on past pipe opportunities as the stage is overwritten once it is changed and there is no data stamp for this, the pipe at the beginning of each quarter should contain all the pending opportunities for it, so this is the most accurate information that you can have. 
